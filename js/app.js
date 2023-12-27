@@ -632,7 +632,8 @@
             options.forEach((option => option.addEventListener("click", (() => {
                 closeSelect(select);
                 const text = option.textContent;
-                title.innerText = text;
+                if (select.querySelector(".select-search")) title.querySelector('input[type="text"]').value = text; else title.innerText = text;
+                console.log(select);
             }))));
         }));
         document.addEventListener("click", handleDocumentClick);

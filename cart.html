@@ -6,14 +6,14 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231226232400">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231227235113">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap&_v=20231226232400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap&_v=20231227235113" rel="stylesheet">
 </head>
 
 <body>
@@ -305,7 +305,6 @@
 									<a href="#" class="nav__link">Контакти</a>
 								</li>
 							</ul>
-
 							<div class="header__numbers mobile">
 								<a href="tel:+380982449069">+38 (098) 244 90 69</a>
 								<a href="tel:+380674407591">+38 (067) 440 75 91</a>
@@ -388,6 +387,19 @@
 											</div>
 										</summary>
 										<div class="spollers__body">
+											<div class="select">
+												<div class="select__title select-search">
+													<label for="order-delivery1_city">Вкажіть населений пункт України</label>
+													<input id="order-delivery1_city" placeholder="Виберіть своє місто" type="text">
+												</div>
+												<div class="select__body">
+													<div class="select__item">Київ</div>
+													<div class="select__item">Дніпро</div>
+													<div class="select__item">Харків</div>
+													<div class="select__item">Львів</div>
+													<div class="select__item">Івано-Франківськ</div>
+												</div>
+											</div>
 											<div class="select">
 												<div class="select__title"><span>Відділення Нової Пошти</span></div>
 												<div class="select__body">
@@ -482,32 +494,32 @@
 							<div class="order__cart">
 								<div class="order__cart-items">
 									<div class="order__item">
-										<div class="order__item-img">
+										<a href="/product.html" class="order__item-img">
 											<picture><source srcset="img/products/product_cart.webp" type="image/webp"><img src="img/products/product_cart.png" alt=""></picture>
-										</div>
-										<div class="order__item-name">Ризоактив концентрат торф 5л</div>
+										</a>
+										<a href="/product.html" class="order__item-name">Ризоактив концентрат торф 5л</a>
 										<div class="order__item-quantity">1 шт</div>
 										<div class="order__item-price">4250 грн</div>
 									</div>
 									<div class="order__item">
-										<div class="order__item-img">
+										<a href="/product.html" class="order__item-img">
 											<picture><source srcset="img/products/product_cart.webp" type="image/webp"><img src="img/products/product_cart.png" alt=""></picture>
-										</div>
-										<div class="order__item-name">Ризоактив концентрат торф 5л</div>
+										</a>
+										<a href="/product.html" class="order__item-name">Ризоактив концентрат торф 5л</a>
 										<div class="order__item-quantity">1 шт</div>
 										<div class="order__item-price">42 грн</div>
 									</div>
 									<div class="order__item">
-										<div class="order__item-img">
+										<a href="/product.html" class="order__item-img">
 											<picture><source srcset="img/products/product_cart.webp" type="image/webp"><img src="img/products/product_cart.png" alt=""></picture>
-										</div>
-										<div class="order__item-name">Ризоактив концентрат торф 5л</div>
+										</a>
+										<a href="/product.html" class="order__item-name">Ризоактив концентрат торф 5л</a>
 										<div class="order__item-quantity">1 шт</div>
 										<div class="order__item-price">4250 грн</div>
 									</div>
 
 								</div>
-								<button class="order__edit">Редагувати замовлення</button>
+								<button data-popup="#cart" class="order__edit">Редагувати замовлення</button>
 							</div>
 							<div data-da=".order__left,992,3" class="order__total">
 								<div class="order__total-top">
@@ -777,7 +789,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231226232400"></script>
+	<script src="js/app.min.js?_v=20231227235113"></script>
 </body>
 
 </html>
